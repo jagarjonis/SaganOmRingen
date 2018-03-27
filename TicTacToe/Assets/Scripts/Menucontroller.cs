@@ -16,6 +16,13 @@ public class Menucontroller: MonoBehaviour
         SceneManager.LoadScene(0);
 
     }
+
+    public void quitGame()
+    {
+        Application.Quit();
+
+
+    }
     
 
 
