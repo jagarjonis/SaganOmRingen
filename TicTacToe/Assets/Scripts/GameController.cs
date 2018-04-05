@@ -169,7 +169,7 @@ public class GameController : MonoBehaviour
         moveCount = 0;
         gameOverPanel.SetActive(false);
         restartButton.SetActive(false);
-        SetPlayerButtons(Toggle);
+        SetPlayerButtons(true);
         SetPlayerColorsInactive();
         startInfo.SetActive(true);
 
