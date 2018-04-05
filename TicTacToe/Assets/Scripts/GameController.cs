@@ -170,7 +170,8 @@ public class GameController : MonoBehaviour
         gameOverPanel.SetActive(false);
         restartButton.SetActive(false);
         SetPlayerButtons(true);
-        SetPlayerColorsInactive();
+        //SetPlayerColorsInactive();
+        SetPlayerColorsPanel();
         startInfo.SetActive(true);
 
         for (int i = 0; i < buttonList.Length; i++)
@@ -199,6 +200,14 @@ public class GameController : MonoBehaviour
         playerX.text.color = inactivePlayerColor.textColor;
         playerO.panel.color = inactivePlayerColor.panelColor;
         playerO.text.color = inactivePlayerColor.textColor;
+    }
+
+    void SetPlayerColorsPanel()
+    {
+        playerX.panel.color = activePlayerColor.panelColor;
+        playerX.text.color = activePlayerColor.textColor;
+        playerO.panel.color = activePlayerColor.panelColor;
+        playerO.text.color = activePlayerColor.textColor;
     }
 
 }
